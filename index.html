@@ -43,6 +43,25 @@
         .project {
             margin: 20px 0;
         }
+
+        /* Add this CSS to your existing <style> block or link to an external stylesheet */
+
+.profile-picture {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Clips the image to the circular shape */
+    margin: 0 auto; /* Centers the image horizontally */
+    border: 3px solid #333; /* Adds a border around the circle */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the entire image fits within the circle */
+}
+
     </style>
 </head>
 <body>
@@ -60,6 +79,9 @@
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
+            <div class="profile-picture">
+            <img src="IMG_E9715.JPG" alt="Priyanka Bhatnagar" width="150" height="150">
+            </div>
             <p>I am an experienced accountant and financial analyst with a passion for leveraging data-driven insights to optimize business performance. By combining my strong analytical skills, expertise in financial analysis, and advanced data analysis capabilities, I want to empower organizations to make strategic decisions and drive sustainable growth.</p>
         </section>
         <section id="portfolio">
